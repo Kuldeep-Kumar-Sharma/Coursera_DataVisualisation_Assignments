@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-        <title>D3 Example</title>
+    <title>D3 Example</title>
     <script src="https://d3js.org/d3.v6.min.js"></script>
     <style>
       body {
@@ -68,7 +68,7 @@
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
       d3.csv(
-        "http://192.168.43.8:8080/ExcelFormattedGISTEMPData2CSV.csv",
+        "http://localhost:8080/ExcelFormattedGISTEMPData2CSV.csv",
         function (error, data) {
           color.domain(
             d3.keys(data[0]).filter(function (key) {
